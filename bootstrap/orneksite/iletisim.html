@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="orneksite.html">
+            <img src="/resimler/bootstrap-logo-shadow.png" width="40" height="30" alt="">
+            Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="orneksite.html">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hakkımda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Kurslarım
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">C#</a>
+                        <a class="dropdown-item" href="#">Java</a>
+                        <a class="dropdown-item" href="#">MSSQL</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h3 class="text-center mt-4">KAYIT FORMU</h3>
+        <form class="mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">İsim Soyisim</label>
+                        <input type="text" class="form-control" id="isimInput" aria-describedby="isimHelp">
+                        <small id="isimHelp" class="form-text text-muted">Bu alan zorunludur.</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="sifre">Şifreniz</label>
+                        <input type="password" class="form-control" id="sifre">
+                        <small id="sifreHelp" class="form-text text-muted">Bu alan zorunludur.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email">Email Adresi</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="sehir">Şehir Seçiniz</label>
+                        <select class="form-control" id="sehir">
+                            <option>İstanbul</option>
+                            <option>Ankara</option>
+                            <option>Trabzon</option>
+                            <option>Samsun</option>
+                            <option>Eskişehir</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="file">Resim Seçiniz :</label>
+                        <input type="file" class="form-control-file" id="file">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="col">
+                        <h5>Cinsiyet</h5>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Erkek
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Kadın
+                            </label>
+                        </div>
+                        <br>
+
+                    </div>
+
+                    <div class="col">
+                        <h5>Hobileriniz</h5>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="check1">
+                            <label class="form-check-label" for="check1">
+                                Kitap Okumak
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="check2">
+                            <label class="form-check-label" for="check2">
+                                Seyehat Etmek
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="check3">
+                            <label class="form-check-label" for="check3">
+                                Film İzlemek
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <button type="submit" class="btn btn-success btn-block">Kaydet</button>
+                <button type="reset" class="btn btn-secondary btn-block">Temizle</button>
+            </div>
+
+
+        </form>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
